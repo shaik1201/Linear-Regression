@@ -1,0 +1,10 @@
+if you are in another folder:
+
+import sys
+# caution: path[0] is reserved for script path (or '' in REPL)
+sys.path.insert(1, '../linear_regression/linear_reg_package')
+
+from linear_regression import linear_regression
+
+arr = np.array([((5,10),13), ((2,6),7), ((6,4),15), ((8,8),19)], dtype=object)
+coef = linear_regression(arr).coef
